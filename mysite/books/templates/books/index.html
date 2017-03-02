@@ -1,0 +1,23 @@
+
+{% extends 'books/base.html' %}
+
+{% block body %}
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+</head>
+<body>
+
+
+
+<ul>
+<!-- def get_queryset(self): return object list in views.py-->
+ {% for book in object_list %}
+ <li><a href="{% url 'books:detail' book.id %}">{{book.name}}</a></li>
+ {% endfor %}
+</ul>
+</body>
+
+
+</html>
+{% endblock %}

@@ -20,3 +20,4 @@ class Book(models.Model):
     price = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     
+    
